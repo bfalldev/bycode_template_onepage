@@ -1,0 +1,159 @@
+.logo{
+	width: 70px;
+	height: 70px;
+	position: relative;
+	float: right;
+}
+
+.home{
+	position: relative;
+	height: 100%;
+	background-image: url("../medias/bayecode/8dAnJ9.jpg");
+	width: 100%;
+	background-size: cover;
+  	background-attachment: fixed; 
+}
+
+/*.home::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-right: 100vw solid #FAFAFA;
+    border-top: 100px solid transparent;
+    z-index: 10000; 
+}*/
+
+.menu{
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	margin-bottom: 25px;
+	position: fixed;
+}
+
+.navbar{
+	width: 95%;
+	height: 60px;
+	margin-bottom: 25px;
+}
+
+.item{
+	font-family: constantia;
+	height: 40px;
+	width: 170px;
+	background-color: #7FFFD4;
+	color: #00008B;
+	text-decoration: none;
+	margin: 5px;
+	border: #20B2AA 1px solid;
+	text-align: center;
+	border-radius: 10px;
+	text-justify: center;
+	font-size: 2em;
+}
+
+@media (max-width: 600px) {
+	.menu{
+		flex-direction: column;
+		height: auto; 
+		margin-bottom: 50px;
+	}
+
+	#desc{
+		margin-top: 400px;
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 1078px) {
+	.item{
+		font-size: 18px;
+		height: 30px;
+		width: 120px;
+	}
+}
+
+.page1{
+	/*background-image: url('../medias/bayecode/1508236843456-peakcut.png');*/
+	background-color: #1E90FF;
+	padding: 60px;
+}
+
+.page2{
+	/*background-image: url('../medias/bayecode/js.jpg');*/
+	 background-color: #00B2EE;
+	 padding: 60px;
+}
+
+.page3{
+	/*background-image: url('../medias/bayecode/javascript.jpg');*/
+	background-color: #87CEFF;
+	padding: 60px;
+}
+
+.page4{
+	/*background-image: url('../medias/bayecode/cc.jpg');*/
+	background-color: #C6E2FF;
+	padding: 60px;
+}
+
+section{
+	height: 760px;
+}
+.descript{
+	background-color: white;
+}
+
+a#cRetour{
+  border-radius:3px;
+  padding:10px;
+  font-size:25px;
+  text-align:center;
+  color:#fff;
+  background:cyan;
+  position:fixed;
+  right:20px;
+  bottom: 20px;
+  opacity:1;
+  z-index:99999;
+  transition:all ease-in 0.2s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  text-decoration: none;
+}
+a#cRetour:before{ content: "\25b2"; }
+a#cRetour:hover{
+  background:rgba(0, 0, 0, 1);
+  transition:all ease-in 0.2s;
+}
+
+a#cRetour.cVisible{
+  bottom:20px;
+  opacity:1;
+}
+
+#cRetour.cInvisible {
+    bottom: 20px;
+    opacity: 0.5;
+    transition: all ease-in 0.5s;
+}
+
+.after, .before, .inter{
+	background-color: aquamarine;
+	color: black;
+	height: 270px;
+	width: 370px;
+	opacity: 0.85;
+	border-radius: 10px;
+	margin: 10px;
+	padding: 5px;
+	font-size: 15px;
+	font-family: 'times new roman';
+	display: none;
+}
+
+#desc{
+	margin-top: 120px;
+	display: flex;
+}
